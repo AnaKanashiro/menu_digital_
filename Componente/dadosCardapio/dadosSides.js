@@ -10,32 +10,34 @@ export const acompanhamentos = [
     nome: "Edamame",
     preco: "R$ 6,00",
     descricao: "Vagens de soja cozidas e salgadas",
+    precoBRL: 6,
   },
   {
     foto: fries,
     nome: "Batata Frita",
     preco: "R$ 10,00",
-    descricao:
-      "cortes em palito ou crinkle",
+    descricao: "cortes em palito ou crinkle",
+    precoBRL: 10,
   },
   {
     foto: batataDoce,
     nome: "Batata Doce Frita",
     preco: "R$ 13,00",
-    descricao:
-      "Batatas-doces cortadas e fritas em palitos ou chips",
+    descricao: "Batatas-doces cortadas e fritas em palitos ou chips",
+    precoBRL: 13,
   },
   {
     foto: salada,
     nome: "Salada da casa",
     preco: "R$ 13,00",
     descricao: "Consultar Atendente sobre a salada do dia",
+    precoBRL: 13,
   },
   {
     foto: frangofrito,
     nome: "Frango frito",
     preco: "R$ 15,00",
     descricao: "sobrecoxa de frango marinado no tempero da casa e empanado",
-  }
+    precoBRL: 15,
+  },
 ];
-

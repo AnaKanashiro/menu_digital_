@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Logo from './Logo';
 import OpcoesHeader from './OpcoesHeader';
-import IconesHeader from './IconesHeader';
 
 function Header() {
     return (
@@ -10,7 +9,6 @@ function Header() {
             <Logo />
             <View style={styles.opcoes}>
                 <OpcoesHeader />
-                {/* <IconesHeader /> */}
             </View>
         </View>
     );

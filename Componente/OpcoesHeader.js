@@ -1,16 +1,27 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const textoOpcoes = ["MEU PERFIL", "FAZER PEDIDO"];
 
-function OpcoesHeader({ navigation }) {
+function OpcoesHeader() {
+  const navigation = useNavigation();
+
+  const handleNavigation = (texto) => {
+    if (texto === "MEU PERFIL") {
+      navigation.navigate("CadastroUsuario");
+    } else if (texto === "FAZER PEDIDO") {
+      navigation.navigate("ResumoCompras");
+    }
+  };
+
   return (
     <View style={styles.opcoes}>
       {textoOpcoes.map((texto) => (
-        <TouchableOpacity 
-          key={texto} 
-          style={styles.opcao} 
-          onPress={() => navigation.navigate(texto.toLowerCase())} // Navegação para a tela correspondente
+        <TouchableOpacity
+          key={texto}
+          style={styles.opcao}
+          onPress={() => handleNavigation(texto)}
         >
           <Text style={styles.texto}>{texto}</Text>
         </TouchableOpacity>
@@ -27,16 +38,16 @@ const styles = StyleSheet.create({
   opcao: {
     fontSize: 16,
     height: '100%',
-    paddingVertical: 8,       // Adiciona padding vertical
-    paddingHorizontal: 20,     // Adiciona padding horizontal
-    marginRight: 20,          // Adiciona margem direita para separar os botões
-    marginLeft: 20,          // Adiciona margem direita para separar os botões
-    backgroundColor: 'rgb(115, 12, 12)', // Fundo vermelho
-    borderRadius: 5,          // Adiciona bordas arredondadas
+    paddingVertical: 8,
+    paddingHorizontal: 20,
+    marginRight: 20,
+    marginLeft: 20,
+    backgroundColor: 'rgb(115, 12, 12)',
+    borderRadius: 5,
   },
   texto: {
-    fontSize: 10, 
-    color: 'white',           // Texto branco
+    fontSize: 10,
+    color: 'white',
   },
 });
 
