@@ -11,7 +11,7 @@ function Titulo({ nome, descricao }) {
 }
 
 const styles = StyleSheet.create({
-  Titulo: { // Corrigido o nome do estilo
+  Titulo: { 
     padding: 10,
     margin: 10,
     alignItems: "center",

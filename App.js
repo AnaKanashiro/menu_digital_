@@ -1,4 +1,3 @@
-// App.js
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -15,11 +14,11 @@ function App() {
   return (
     <NavigationContainer>
       <View style={styles.container}>
-        <Header /> {/* Renderize o Header aqui */}
+        <Header /> {}
         <Stack.Navigator
           initialRouteName="Home"
           screenOptions={{
-            headerShown: false, // Esconde o header padrão do Stack Navigator
+            headerShown: false, 
           }}
         >
           <Stack.Screen name="Home" component={Home} />

@@ -17,18 +17,18 @@ function Header() {
 const styles = StyleSheet.create({
     header: {
         backgroundColor: 'white',
-        width: '100%', // Faz o cabeçalho ocupar toda a largura da tela
+        width: '100%', 
         height: 160,
         justifyContent: 'center',
-        alignItems: 'center', // Centraliza o conteúdo verticalmente
-        flexDirection: 'collum', // Para alinhar a logo e o título lado a lado
+        alignItems: 'center', 
+        flexDirection: 'collum', 
         display: 'flex',
     },
     titulo: {
         fontSize: 20,
         fontWeight: 'bold',
         color: 'white',
-        marginLeft: 10, // Adiciona um espaço entre a logo e o título
+        marginLeft: 10, 
     },
     opcoes: {
         display: 'flex',

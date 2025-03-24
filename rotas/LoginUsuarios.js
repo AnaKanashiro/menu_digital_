@@ -6,9 +6,7 @@ function LoginUsuarios({ navigation }) {
   const [senha, setSenha] = useState('');
 
   const handleLogin = () => {
-    // Aqui você implementaria a lógica de login do usuário
-    // Por exemplo, verificar os dados em um servidor ou localmente
-    console.log('Login:', { email, senha });
+    console.log('Login:', { email, senha }); //usando o inspecionar dá par ver as informações de login
   };
 
   const goToCadastro = () => {

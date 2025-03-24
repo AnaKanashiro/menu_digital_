@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 10,
     alignItems: "center",
-    width: 250,       // Largura fixa
-    maxWidth: '90%',   // Largura máxima de 90% da tela
-    alignSelf: 'center', // Centraliza o card horizontalmente
+    width: 250,      
+    maxWidth: '90%',  
+    alignSelf: 'center', 
   },
   imagem: {
     width: 100,
